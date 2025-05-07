@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    height: 100vh;
+    background-color: cyan;
+}
+
+.container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15% 35% 35% 15% ;
+    row-gap: 10px;
+    column-gap: 5px;
+}
+
+#header{
+    background-color: green;
+    grid-row: 1;
+    grid-column: span 6;
+}
+
+#rosa{
+    background-color: deeppink;
+    border-radius: 6px;
+    grid-column: span 2;
+}
+
+#roxo{
+    background-color: blueviolet;
+    border-radius: 6px;
+    grid-column: span 1;
+}
+#rodape{
+    background-color: orangered;
+    grid-row: 4;
+    grid-column: span 6;
+}
